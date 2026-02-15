@@ -1,3 +1,5 @@
+import { randomUUID } from 'node:crypto';
+
 export interface ThresholdConfig {
   pass: number;
   flag: number;
@@ -86,7 +88,7 @@ export function createExecutionEvent(opts: {
   schemaDefinition?: Record<string, unknown>;
 }): ExecutionEvent {
   return {
-    executionId: opts.executionId ?? crypto.randomUUID(),
+    executionId: opts.executionId ?? randomUUID(),
     agentId: opts.agentId,
     input: opts.input,
     output: opts.output,

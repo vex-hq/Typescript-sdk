@@ -1,3 +1,4 @@
+import { randomUUID } from 'node:crypto';
 import type { Vex } from './vex';
 import type { VexResult, ConversationTurn } from './models';
 import { TraceContext } from './trace';
@@ -24,7 +25,7 @@ export class Session {
   ) {
     this.vex = vex;
     this.agentId = agentId;
-    this.sessionId = sessionId ?? crypto.randomUUID();
+    this.sessionId = sessionId ?? randomUUID();
     this.metadata = metadata ?? {};
   }
 
