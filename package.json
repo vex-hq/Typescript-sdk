@@ -25,7 +25,7 @@
     "access": "public"
   },
   "license": "Apache-2.0",
-  "author": "Oppla.ai <eng@oppla.ai>",
+  "author": "Vex AI, Inc. <eng@tryvex.dev>",
   "repository": {
     "type": "git",
     "url": "https://github.com/Agent-X-AI/TypeScript-SDK"
