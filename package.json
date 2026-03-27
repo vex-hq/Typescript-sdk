@@ -1,6 +1,6 @@
 {
   "name": "@vex_dev/sdk",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "The reliability layer for AI agents in production",
   "type": "module",
   "main": "./dist/index.cjs",
